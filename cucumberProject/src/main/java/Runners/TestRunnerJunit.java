@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = {"C:/Users/prate/Downloads/cucumberProject/cucumberProject/src/main/resources/features/hooks2.feature"}
         //dryRun = true
         ,glue = {"stepdefinitions"}
-         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+         plugin = {"pretty","html:target/site/cucumber-pretty", "json:target/cucumber.json","junit:target/cucumber.xml","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
         ,monochrome = true,
 
         //tags = "@orateek",
